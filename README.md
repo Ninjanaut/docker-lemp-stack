@@ -30,7 +30,7 @@ This project contains a docker compose file that will create three containers
 
             docker ps -a
 
-        - and run the following command that will return IP address
+    - Run the following command and replace `<container id>` with copied id. The command will return IP address
 
-                docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container id>
+            docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container id>
     
